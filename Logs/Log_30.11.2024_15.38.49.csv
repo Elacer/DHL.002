@@ -1,0 +1,5 @@
+﻿DATETIME,LEVEL,MODULE,TRANSACTION,MESSAGE,SCREENSHOOT
+30/11/2024 03:38:50 p. m.,Info,Framework_InitializeAllSettings,NA,"Initialization was successful, the project folders have been created/cleaned, the configuration file was read and the log and output file of the current execution was created.",NA
+30/11/2024 03:38:51 p. m.,Info,Main,NA,Username [franc] starts the [DHL.002 - Airline Event Capture] process on the [FRANK-00] machine.,NA
+30/11/2024 03:38:52 p. m.,Info,Framework_InitAllApplications,NA,Framework_InitAllApplications starts.,NA
+30/11/2024 03:38:53 p. m.,Info,Framework_InitAllApplications,NA,Starting Microsoft Edge...,NA

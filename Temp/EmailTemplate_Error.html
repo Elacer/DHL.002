@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notificación del proceso</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 15px; 
+            position: relative;
+            overflow: hidden;
+        }
+        .header {
+            background-color: #BA3136;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            border-top-left-radius: 15px; 
+            border-top-right-radius: 15px;
+            position: relative;
+        }
+        .header img {
+            width: 100px;
+            height: auto;
+            margin-bottom: 0px;
+        }
+        .header h2 {
+            margin: 0;
+            font-size: 28px;
+        }
+        .content {
+            padding: 20px;
+            text-align: left;
+            color: #323232;
+        }
+        .content h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .content p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        .details {
+            background-color: #f9f9f9;
+            border-left: 4px solid #320C79;
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 10px; 
+        }
+        .details ul {
+            list-style: none;
+            padding: 0;
+        }
+        .details ul li {
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+        .details ul li strong {
+            color: #320C79;
+        }
+        .footer {
+            text-align: center;
+            padding: 10px 0;
+            font-size: 12px;
+            color: #777777;
+            border-top: 1px solid #dddddd;
+            border-bottom-left-radius: 15px; 
+            border-bottom-right-radius: 15px;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="header">
+            <img src="https://img.icons8.com/ios-filled/100/ffffff/robot.png" alt="Bot Logo">
+            <h2>Notificación de Proceso</h2>
+        </div>
+        <div class="content">
+            <h1>Estimado(a) Equipo DHL,</h1>
+            <p>Le informamos que el proceso <strong>DHL001_Lectura de Milestones de las Páginas de Navieras</strong> ha presentado un <strong style="color: #BA3136;">Error</strong>. A continuación, encontrará los detalles:</p>
+            <div class="details">
+                <ul>
+                    <li><strong style="color: #BA3136;">Hora de inicio:</strong> {Start_Time}</li>
+                    <li><strong style="color: #BA3136;">Descripcion:</strong> {Exception_Reason}</li>
+                </ul>
+            </div>
+            <p>Saludos cordiales,</p>
+            <p><strong>Notificaciones RPA</strong><br>
+            Equipo Zumit</p>
+        </div>
+        <div class="footer">
+            <p>Este es un correo automático. </p>
+            <p>Por favor, no responda a este mensaje.</p>
+        </div>
+    </div>
+</body>
+</html>

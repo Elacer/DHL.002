@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notificación del proceso</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 15px; 
+            position: relative;
+            overflow: hidden;
+        }
+        .header {
+            background-color: #01D6B3;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            border-top-left-radius: 15px; 
+            border-top-right-radius: 15px;
+            position: relative;
+        }
+        .header img {
+            width: 100px;
+            height: auto;
+            margin-bottom: 0px;
+        }
+        .header h2 {
+            margin: 0;
+            font-size: 28px;
+        }
+        .content {
+            padding: 20px;
+            text-align: left;
+            color: #323232;
+        }
+        .content h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .content p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        .details {
+            background-color: #f9f9f9;
+            border-left: 4px solid #320C79;
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 10px; 
+        }
+        .details ul {
+            list-style: none;
+            padding: 0;
+        }
+        .details ul li {
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+        .details ul li strong {
+            color: #320C79;
+        }
+        .footer {
+            text-align: center;
+            padding: 10px 0;
+            font-size: 12px;
+            color: #777777;
+            border-top: 1px solid #dddddd;
+            border-bottom-left-radius: 15px; 
+            border-bottom-right-radius: 15px;
+        }
+        .pre-footer {
+            font-size: 12px;
+            color: #888888;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .footer a {
+            color: #01D6B3;
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="header">
+            <img src="https://img.icons8.com/ios-filled/100/ffffff/robot.png" alt="Bot Logo">
+            <h2>Notificación de Proceso</h2>
+        </div>
+        <div class="content">
+            <h1>Estimado(a) Equipo DHL,</h1>
+            <p>Le informamos que el proceso <strong>DHL001_Lectura de Milestones de las Paginas de Navieras</strong> se ha completado exitosamente. A continuación, encontrará los detalles:</p>
+            <div class="details">
+                <ul>
+                    <li><strong>Hora de inicio: </strong>{Start_Time}</li>
+                    <li><strong>Total transacciones procesadas: </strong>{Total_Transactions}</li>
+                    <li><strong>Tiempo total de procesamiento: </strong>{Total_Time}</li>
+                    <li><strong>Ahorro estimado de costos: </strong>Ahorro aprox. del 93.7% en tiempo y ${Ahorro} en costos de procesamiento manual*.</li>
+                </ul>
+            </div>
+            <p>Para más detalles consulte los archivos adjuntos a este correo.<br>
+            Saludos cordiales,</p>
+            <p><strong>Notificaciones RPA</strong><br>
+            Equipo Zumit</p>
+        </div>
+        <p class="pre-footer">*Tomando en cuenta 2min por transacción por parte de usuario con un coste estándar $125/hora vs 7.5seg por transacción por parte de ZBot_DHL.001 sobre el mismo costo.</p>
+        <div class="footer">
+            <p>Este es un correo automático. </p>
+            <p>Por favor, no responda a este mensaje.</p>
+        </div>
+    </div>
+</body>
+</html>
